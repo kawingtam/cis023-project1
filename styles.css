@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #textbox-container {
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* Center the text box and button horizontally */
+    margin-top: 20vh; /* Adjust as needed to center vertically */
+  }
+  
+  #textbox {
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+  
+  #startQuizBtn {
+    margin-top: 10px; /* Add some space between the text box and button */
+  }
+  

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <h1>Welcome to the Quiz!</h1>
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" placeholder="Your Name">
+    <button onclick="startQuiz()">Start Quiz</button>
+
+    <script>
+        function startQuiz() {
+            var name = document.getElementById('name').value;
+            if (name.trim() !== '') {
+                // Store the name in local storage
+                localStorage.setItem('quizUserName', name);
+                // Redirect to quiz.html
+                window.location.href = 'quiz.html';
+            } else {
+                alert('Please enter your name.');
+            }
+        }
+    </script>
+</body>
+</html>
